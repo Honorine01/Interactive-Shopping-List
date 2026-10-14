@@ -149,7 +149,7 @@ function saveShoppingItems() {
 function updateTotalCost() {
     const total = shoppingItems
         .filter(function (item) {
-            return item.selected;
+            return item.purchased;
         })
         .reduce(function (sum, item) {
             return sum + item.price;

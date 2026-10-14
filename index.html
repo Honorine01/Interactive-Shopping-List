@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container"></div>
+    
+    <h1>Interactive Shopping List</h1>
+    <div class="shopping form">
+
+    <input 
+    type="text"
+    id="item-input"
+    placeholder="Enter the shopping item"
+    >
+
+    <input
+    type="number"
+    id="price-input"
+    placeholder="Enter the price"
+    min="0"
+    step="0.01"
+>
+
+<button id="add-button">Add</button>
+</div>
+       <ul id="shopping-list"></ul>
+         <div class="shopping-actions">
+            <button id="clear-button">Clear List</button>
+            <button id="mark-purchased-button">Mark Purchased</button>
+            </div>
+            <p id="total-cost">Total Cost: Ksh 0.00</p>
+
+<script src="index.js"></script>
+
+    
+</body>
+</html>
